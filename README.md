@@ -1,1 +1,1 @@
-# restaurant-page
+# 这是一个餐厅页面，使用javascript实现
