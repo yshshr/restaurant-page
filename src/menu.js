@@ -70,7 +70,7 @@ function createMenu() {
     menudiv.appendChild(span);
     const img = document.createElement('img');
     img.src = menu.imageUrl;
-    img.alt = '菜品图片';
+    img.alt = `菜品${menu.name}图片`;
     menudiv.appendChild(img);
     return menudiv;
   }
