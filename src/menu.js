@@ -30,7 +30,7 @@ soups.push(new Menu('冬瓜排骨汤', '清甜鲜美、消暑去湿的经典家�
 function createMenu() {
   const div = document.createElement('div');
   const h1 = document.createElement('h1');
-  h1.textContent = '菜单';
+  h1.textContent = '菜单（提供主食、菜品和汤）';
   div.appendChild(h1);
   const h2mainfood = document.createElement('h2');
   h2mainfood.textContent = '主食';

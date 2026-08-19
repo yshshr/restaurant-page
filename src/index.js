@@ -1,6 +1,7 @@
 import {loadMenu} from './menu.js'
 import {loadContact} from './contact.js'
 import restaurantImg from './assets/components/pic/restaurant.jpg'
+import './style.css'
 
 console.log('餐馆页面...');
 
