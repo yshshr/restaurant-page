@@ -1,3 +1,5 @@
+import riceImg from './assets/components/pic/rice.jpeg'
+
 class Menu{
   constructor(name, description, price, imageUrl){
     this.name = name;
@@ -11,7 +13,7 @@ const mainfood = [];
 const dishes =[];
 const soups = [];
 
-mainfood.push(new Menu('米饭', '稻香贡米，臻选株高1米优质稻种，专注打造品质稻花香米', 3, ''));
+mainfood.push(new Menu('米饭', '稻香贡米，臻选株高1米优质稻种，专注打造品质稻花香米', 3, riceImg));
 mainfood.push(new Menu('馒头', '精选优质面粉，纯手工制作，营养健康，嚼劲十足', 2, ''));
 mainfood.push(new Menu('面条', '劲道、爽滑、麦香味十足，空心挂面吸收更多汤汁，更加入味', 8, ''));
 
@@ -72,6 +74,7 @@ function createMenu() {
     img.src = menu.imageUrl;
     img.alt = `菜品${menu.name}图片`;
     menudiv.appendChild(img);
+    menudiv.classList.add('menu-card');
     return menudiv;
   }
 }

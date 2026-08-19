@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100vh;
+  height: 101vh;
   display: flex;
   flex-direction: column;
 }
@@ -68,9 +68,10 @@ nav button {
   border-radius: 10px;
 }
 
-#content > div > div {
+.menu-card {
   border: 8px green solid;
-  border-radius: 46px;
+  border-radius: 40px / 90px;
+  corner-shape: bevel;
   margin-bottom: 30px;
   width: 480px;
   box-sizing: border-box;
@@ -78,20 +79,50 @@ nav button {
   grid-template-rows: 60px auto 280px;
   grid-template-columns: 130px 1fr;
   gap: 20px;
-  & h3 {
-    grid-column: 1 / 3;
-    padding-left: 40px;
-  }
-  & p {
-    grid-column: 1 / 3;
-    padding-left: 75px;
-    padding-right: 30px;
-    font-size: 0.9em;
-  }
+}
 
-  & span {
-    padding-left: 75px;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
+.menu-card h3 {
+  grid-column: 1 / 3;
+  padding-left: 40px;
+}
+
+.menu-card p {
+  grid-column: 1 / 3;
+  padding-left: 75px;
+  padding-right: 30px;
+  font-size: 0.9em;
+}
+
+.menu-card span {
+  padding-left: 75px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.menu-card img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.contact-card {
+  width: 500px;
+  border: 8px solid green;
+  border-radius: 40px / 60px;
+  corner-shape: bevel;
+  margin-bottom: 30px;
+  padding: 20px 0px;
+  display: grid;
+  grid-template-rows: 100px auto auto auto;
+}
+
+.contact-card h2 {
+  padding-left: 40px;
+}
+
+.contact-card span {
+  padding-left: 75px;
+  margin-bottom: 6px;
+  font-weight: bold;
 }

@@ -36,6 +36,7 @@ function createContact() {
     const email = document.createElement('span');
     email.textContent = employee.email;
     contactdiv.appendChild(email);
+    contactdiv.classList.add('contact-card');
     div.appendChild(contactdiv);    
   });
   return div;
